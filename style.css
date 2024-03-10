@@ -362,17 +362,20 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
-}
-#projects .projects-header h1 {
+  }
+  
+  #projects .projects-header h1 {
 	margin-bottom: 50px;
-}
-#projects .all-projects {
+  }
+  
+  #projects .all-projects {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-}
-#projects .project-item {
+  }
+  
+  #projects .project-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -381,8 +384,9 @@ p {
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
-}
-#projects .project-info {
+  }
+  
+  #projects .project-info {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -392,26 +396,31 @@ p {
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
-}
-#projects .project-info h1 {
+  }
+  
+  #projects .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
-}
-#projects .project-info h2 {
+  }
+  
+  #projects .project-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
-}
-#projects .project-info p {
+  }
+  
+  #projects .project-info p {
 	color: white;
-}
-#projects .project-img {
+  }
+  
+  #projects .project-img {
 	flex-basis: 50%;
-	height: 300px;
+	height: auto;
 	overflow: hidden;
 	position: relative;
-}
-#projects .project-img:after {
+  }
+  
+  #projects .project-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -420,14 +429,19 @@ p {
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.7;
-}
-#projects .project-img img {
+  }
+  
+  #projects .project-img img {
+	max-width: 100%; /* Set maximum width to 100% for responsiveness */
 	transition: 0.3s ease transform;
-}
-#projects .project-item:hover .project-img img {
+  }
+  
+  #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
-}
-/* End Projects section */
+  }
+  
+  /* End Projects section */
+  
 
 /* About Section */
 #about .about {
@@ -582,7 +596,12 @@ p {
 .btn:hover {
 	background-color: #0056b3;
 }
-
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+	.input-box {
+	  flex-direction: column; /* Stack inputs vertically on smaller screens */
+	}
+  }
 
 /* Footer */
 #footer {
